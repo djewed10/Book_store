@@ -16,9 +16,16 @@ app.use(helmet())
 
 // Middlewares
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
+// Your API routes go here
+
+// Serve the index.html for any other requests to support client-side routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 app.use("/books",router); // localhost:5000/books
-
+yeuyhd
 app.use(notFound)
 app.use(errorhandler)
 const start=async ()=>{
