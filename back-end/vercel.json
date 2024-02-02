@@ -2,9 +2,6 @@
   "version": 2,
   "routes": [
     {
-      "handle": "rewrite"
-    },
-    {
       "src": "/books/(.*)",
       "dest": "/books/$1"
     },
