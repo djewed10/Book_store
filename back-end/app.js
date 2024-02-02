@@ -25,6 +25,7 @@ app.use(express.json());
   //res.sendFile(path.join(__dirname, 'public', 'index.html'));
 //});
 app.use("/books",router); // localhost:5000/books
+app.use("/",(req,res)=>{ res.send("hello")})
 app.use(notFound)
 app.use(errorhandler)
 const start=async ()=>{
