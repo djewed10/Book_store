@@ -2,8 +2,14 @@
   "version": 2,
   "routes": [
     {
-        
+      "handle": "compression"
+    },
+    {
       "src": "/books/(.*)",
+      "dest": "/books/$1"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/app.js"
     }
   ]
