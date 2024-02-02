@@ -1,10 +1,7 @@
 {
   "version": 2,
   "routes": [
-    {
-      "src": "/books/(.*)",
-      "dest": "/books/$1"
-    },
+   
     {
       "src": "/(.*)",
       "dest": "/app.js"
