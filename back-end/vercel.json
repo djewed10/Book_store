@@ -1,5 +1,10 @@
 {
-   "rewrites":  [
-       {"source": "/books/(.*)", "destination": "/books"}
-    ]
+  "version": 2,
+  "routes": [
+    {
+        
+      "src": "/books/(.*)",
+      "dest": "/app.js"
+    }
+  ]
 }
