@@ -2,7 +2,7 @@
   "version": 2,
   "routes": [
     {
-      "handle": "compression"
+      "handle": "rewrite"
     },
     {
       "src": "/books/(.*)",
